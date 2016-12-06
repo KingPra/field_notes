@@ -1288,6 +1288,9 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+body {
+  background-color: orange; }
+
 header {
   display: flex;
   justify-content: space-around; }
@@ -1305,6 +1308,7 @@ main {
     main #top h3 {
       width: 100px;
       height: 50px;
-      border: 1px solid black; }
+      border: 1px solid black;
+      font-weight: 100; }
 
 /*# sourceMappingURL=styles.css.map */
