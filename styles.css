@@ -1288,13 +1288,14 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
-#top, #row_two {
+/* sass variables */
+#top, #row_two, .mob_screen {
   color: white;
   padding: 70px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
   text-align: center; }
-
-body {
-  background-color: orange; }
 
 header {
   width: 100%;
@@ -1307,6 +1308,7 @@ header {
   header img {
     padding: 10px; }
 
+/* this is the content surrounded by white border*/
 #box {
   margin: 0 auto;
   height: 40px;
@@ -1317,25 +1319,55 @@ header {
   font-weight: 900; }
 
 main {
-  /*margin: 0 auto;*/
-  border: 1px solid black;
-  /*height: 300px;*/ }
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto; }
+  main::before, main::after {
+    content: ' ';
+    display: table; }
+  main::after {
+    clear: both; }
   main #top {
-    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_800x314_crop_center-center_75/blackice_hero.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 0 auto; }
+    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_800x314_crop_center-center_75/blackice_hero.jpg"); }
     main #top h1 {
       margin: 0; }
     main #top h2 {
       font-size: 0.9em;
       margin: 10px; }
+  main .mob_screen {
+    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/lunacy_AB.jpg");
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: none; }
+    main .mob_screen h2 {
+      font-size: 0.9em;
+      margin: 10px; }
+    main .mob_screen h1 {
+      margin: 0; }
+    @media screen and (min-width: 40em) {
+      main .mob_screen {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    main .mob_screen:last-child:not(:first-child) {
+      float: right; }
+    @media screen and (min-width: 37.5em) {
+      main .mob_screen {
+        width: 100%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        display: block; } }
+  @media screen and (min-width: 37.5em) and (min-width: 40em) {
+    main .mob_screen {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 37.5em) {
+        main .mob_screen:last-child:not(:first-child) {
+          float: right; } }
   main #row_two {
-    margin: 0 auto;
-    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg");
-    background-position: center;
-    background-repeat: no-repeat; }
+    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg"); }
     main #row_two h3 {
       font-size: .8em;
       margin: 0 auto; }
@@ -1343,15 +1375,15 @@ main {
     background-color: white;
     text-align: center;
     padding: 50px 0 50px 0; }
+    main #store_header h1, main #store_header h2 {
+      margin: 0 auto; }
     main #store_header h1 {
-      margin: 0 auto;
       font-size: 1.5em;
       line-height: 1em;
       width: 80%; }
     main #store_header h2 {
       color: #AEA288;
-      font-size: 1em;
-      margin: 0; }
+      font-size: 1em; }
   main #store {
     max-width: 75rem;
     margin-left: auto;
@@ -1364,7 +1396,9 @@ main {
     main #store div {
       padding: 50px 0;
       background-color: white;
-      border: 1px solid black;
+      border-left: .5px solid lightgrey;
+      border-right: .5px solid lightgrey;
+      border-top: 1px solid lightgrey;
       display: inline-block;
       text-align: center;
       width: 50%;
@@ -1377,6 +1411,32 @@ main {
           padding-right: 0.9375rem; } }
       main #store div:last-child:not(:first-child) {
         float: right; }
+      @media screen and (min-width: 37.5em) {
+        main #store div {
+          width: 33.33333%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 37.5em) and (min-width: 40em) {
+    main #store div {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 37.5em) {
+          main #store div:last-child:not(:first-child) {
+            float: right; } }
+      @media screen and (min-width: 62.5em) {
+        main #store div {
+          width: 25%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 62.5em) and (min-width: 40em) {
+    main #store div {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 62.5em) {
+          main #store div:last-child:not(:first-child) {
+            float: right; } }
       main #store div p {
         font-size: 0.9em;
         margin: 0; }
@@ -1385,13 +1445,24 @@ main {
         margin: 0;
         color: #85300a; }
 
+#spacer {
+  background-color: white;
+  height: 80px; }
+
 footer {
+  background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/kraft-bg.jpg");
+  background-repeat: repeat;
   text-align: center; }
+  footer h1, footer h3 {
+    width: 60%;
+    margin: 0 auto; }
   footer h1 {
-    font-size: 1em; }
+    font-size: 2em; }
   footer h3 {
-    font-size: 0.9em; }
+    font-size: 0.8em; }
+  footer #copyright {
+    margin-top: 50px; }
   footer h4 {
-    font-size: .8em; }
+    font-size: .5em; }
 
 /*# sourceMappingURL=styles.css.map */
