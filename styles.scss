@@ -6,15 +6,16 @@
 
 #top, #row_two {
     color: white;
-    padding: 75px 0;
+    padding: 70px 0;
     text-align: center;
-    width: 80%;
 }
 
 body {
     background-color: orange;
 }
 header {
+    width: 100%;
+    position: fixed;
     background-color: white;
     display: flex;
     justify-content: space-around;
@@ -34,19 +35,20 @@ header {
         padding: 10px 0 5px 0;
         border: 2px solid white;  
         font-size: .7em; 
+        font-weight: 900;
 }
 
 main {
-    margin: 0 auto;
-    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_800x314_crop_center-center_75/blackice_hero.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    /*margin: 0 auto;*/
     border: 1px solid black;
-    height: 300px;
+    /*height: 300px;*/
 
     #top {
+        background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_800x314_crop_center-center_75/blackice_hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
     text-align: center;
-    margin: 5px auto;
+    margin: 0 auto;
 
     h1 {
         margin: 0;
@@ -58,5 +60,67 @@ main {
     }
     }
     #row_two {
+        margin: 0 auto;
+        background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        h3 {
+            font-size: .8em;
+            margin: 0 auto;
+            
+        }
+    }
+
+    #store_header {
+        background-color: white;
+        text-align: center;
+        padding: 50px 0 50px 0;
+        
+        h1 {
+            margin: 0 auto;
+            font-size: 1.5em;
+            line-height: 1em;
+            width: 80%;
+            }
+
+
+        h2 { 
+            color: #AEA288;
+            font-size: 1em;
+            margin: 0;
+            }
+        }
+
+    #store {
+         @include grid-row();
+       
+
+        div {
+            padding: 50px 0;
+            background-color: white;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            @include grid-column(6);
+
+            p { font-size: 0.9em;
+                margin: 0; 
+            }
+
+            .price {
+                font-size: 0.9em;
+                margin: 0;
+                color: rgb(133, 48, 10)
+            }
+        }
     }
 }
+
+    footer {
+        text-align: center;
+        h1 { 
+            font-size: 1em;}
+        h3 { font-size: 0.9em;}
+        h4 { font-size: .8em;}
+    }
+

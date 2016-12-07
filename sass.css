@@ -1290,15 +1290,14 @@ button {
     float: left; } }
 #top, #row_two {
   color: white;
-  padding: 70px 0;
-  text-align: center; }
+  padding: 75px 0;
+  text-align: center;
+  width: 80%; }
 
 body {
   background-color: orange; }
 
 header {
-  width: 100%;
-  position: fixed;
   background-color: white;
   display: flex;
   justify-content: space-around; }
@@ -1313,85 +1312,25 @@ header {
   width: 200px;
   padding: 10px 0 5px 0;
   border: 2px solid white;
-  font-size: .7em;
-  font-weight: 900; }
+  font-size: .7em; }
 
 main {
-  /*margin: 0 auto;*/
+  margin: 0 auto;
+  background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_800x314_crop_center-center_75/blackice_hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid black;
-  /*height: 300px;*/ }
+  height: 300px; }
   main #top {
-    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_800x314_crop_center-center_75/blackice_hero.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
     text-align: center;
-    margin: 0 auto; }
+    margin: 5px auto; }
     main #top h1 {
       margin: 0; }
     main #top h2 {
       font-size: 0.9em;
       margin: 10px; }
-  main #row_two {
-    margin: 0 auto;
-    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg");
-    background-position: center;
-    background-repeat: no-repeat; }
-    main #row_two h3 {
-      font-size: .8em;
-      margin: 0 auto; }
-  main #store_header {
-    background-color: white;
-    text-align: center;
-    padding: 50px 0 50px 0; }
-    main #store_header h1 {
-      margin: 0 auto;
-      font-size: 1.5em;
-      line-height: 1em;
-      width: 80%; }
-    main #store_header h2 {
-      color: #AEA288;
-      font-size: 1em;
-      margin: 0; }
-  main #store {
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto; }
-    main #store::before, main #store::after {
-      content: ' ';
-      display: table; }
-    main #store::after {
-      clear: both; }
-    main #store div {
-      padding: 50px 0;
-      background-color: white;
-      border: 1px solid black;
-      display: inline-block;
-      text-align: center;
-      width: 50%;
-      float: left;
-      padding-left: 0.625rem;
-      padding-right: 0.625rem; }
-      @media screen and (min-width: 40em) {
-        main #store div {
-          padding-left: 0.9375rem;
-          padding-right: 0.9375rem; } }
-      main #store div:last-child:not(:first-child) {
-        float: right; }
-      main #store div p {
-        font-size: 0.9em;
-        margin: 0; }
-      main #store div .price {
-        font-size: 0.9em;
-        margin: 0;
-        color: #85300a; }
+  main #row_two h3 {
+    font-size: .5em;
+    margin: 0 auto; }
 
-footer {
-  text-align: center; }
-  footer h1 {
-    font-size: 1em; }
-  footer h3 {
-    font-size: 0.9em; }
-  footer h4 {
-    font-size: .8em; }
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=sass.css.map */
