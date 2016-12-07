@@ -1335,12 +1335,35 @@ main {
       font-size: 0.9em;
       margin: 10px; }
   main .mob_screen {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/lunacy_AB.jpg");
     width: 100%;
     float: left;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     display: none; }
+    @media screen and (min-width: 40em) {
+      main .mob_screen {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    main .mob_screen:last-child:not(:first-child) {
+      float: right; }
+    @media screen and (min-width: 62.5em) {
+      main .mob_screen {
+        width: 66.66667%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+  @media screen and (min-width: 62.5em) and (min-width: 40em) {
+    main .mob_screen {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 62.5em) {
+        main .mob_screen:last-child:not(:first-child) {
+          float: right; } }
     main .mob_screen h2 {
       font-size: 0.9em;
       margin: 10px; }
@@ -1354,7 +1377,7 @@ main {
       float: right; }
     @media screen and (min-width: 37.5em) {
       main .mob_screen {
-        width: 100%;
+        width: 66.66667%;
         float: left;
         padding-left: 0.625rem;
         padding-right: 0.625rem;
@@ -1367,7 +1390,30 @@ main {
         main .mob_screen:last-child:not(:first-child) {
           float: right; } }
   main #row_two {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg"); }
+    @media screen and (min-width: 40em) {
+      main #row_two {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    main #row_two:last-child:not(:first-child) {
+      float: right; }
+    @media screen and (min-width: 62.5em) {
+      main #row_two {
+        width: 33.33333%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+  @media screen and (min-width: 62.5em) and (min-width: 40em) {
+    main #row_two {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 62.5em) {
+        main #row_two:last-child:not(:first-child) {
+          float: right; } }
     main #row_two h3 {
       font-size: .8em;
       margin: 0 auto; }
